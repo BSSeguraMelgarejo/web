@@ -1,0 +1,93 @@
+/*lo ultimo que se hace en html y css es lo que esta escrito al final del codigo*/
+
+h2{
+
+	color:red;
+}
+
+/*selectores de id*/
+
+#nuestros{
+
+	color:green;
+}
+
+#pollo{
+
+	color: blue;
+}
+
+#de_cuates.cuates{
+	color:red;
+}
+
+#de_cuates{ /*en este caso, este no cuenta*/
+	/*porque la sentencia de arriba es más pro*/
+	color:black;
+}
+
+
+#cafe_leyenda{
+	color:yellow;
+}
+
+/*selectores de class*/
+/*las clases si se pueden reutilizar*/
+
+.aside{
+	color:blue;
+}
+
+.nosotros{
+
+	color:green;
+}
+/*selectores con dos clases*/
+
+.u.ultima{
+
+	color:brown;
+}
+
+/*selectores con elementos html y id*/
+
+p#parrafo{
+
+	color: brown;
+}
+
+/*selectores con elementos html y class*/
+
+section.info_restaurantes{
+
+	background:gray;
+}
+
+/*selector universal*/
+/*
+*{
+	color:red!important;
+}*/
+
+.cafe *{
+	background: red;
+}
+
+
+/*selectores por grupo*/
+
+h2, h3, p{
+	background: green;
+	text-align: center;
+}
+
+/*selectores descendientes*/
+
+header.cont{
+
+	background: blue;
+}
+
+header.cont p{
+	background: yellow;
+}

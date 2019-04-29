@@ -1,0 +1,723 @@
+seccion 3
+
+
+cosas iniciales 
+<!DOCTYPE> Para que sepa que es html5
+<html></html>de principio a fin
+
+heah
+<head></head>nada de lo que vaya aqui adentro
+se va a ver en el html
+
+<meta charset = "utf-8"> compatibilidad del
+idioma español
+<meta name="description" content="explorando 
+y aprendiendo html5"> posicionamiento en 
+buscadores
+
+<title>es el titulo superior de la pagina</title>
+
+
+_______________________________
+
+seccion 4
+
+
+body
+esto si se ve en el html
+
+h es por heading o título
+<h1></h1>
+estos h van de 1 a 6 y son jerarquias
+estos h son como los encabezados
+de un periodico, aunque generalmente se usan
+de 1 al 3 o 4
+
+<p></p> 
+estos p son parrafos. Son ilimitados
+
+saltos de linea
+<br>
+o
+</br>
+o
+<br/>
+todos funcionan por igual 
+solo hay que usar uno de esos 3 brakes
+Los saltos de linea son más fáciles de declarar
+en css
+Pueden ir dentro de los <p>
+
+&nbsp;
+non breaking space 
+para dar un espacio entre palabra y palabra
+en html
+
+Texto en negritas
+<b></b>
+<strong></strong>
+poner ahí dentro lo que queramos poner
+en negritas. Por cuestión de semántica, se 
+hace en strong, pero tienen la misma función
+con b (de bold)
+
+Texto en cursiva
+<i></i>
+de italic
+Se puede mezclar con el de b o strong
+
+Texto en Enfasis
+<em></em>
+Tiene la misma función que el i
+Pero se hace así por semántica
+
+Span
+<span></span>
+Etiqueta que no hace nada
+Solo sirve para hacer recordatorios de 
+posibles cambios
+
+Carácteres especiales
+se pueden buscar los códigos por internet
+&hearts;
+empiezan con & y terminan con ;
+
+Insertar Imágenes
+<img src="jdhsakjh.jpg">
+solo tiene apertura
+la imagen debe estar en la misma carpeta
+de la página html donde va a aparecer
+los atributos pueden ser varios
+Todos los tributos se pueden separar con 
+espacios 
+<img src="ssasddsa.jpg" width="200" alt="hola">
+alt es para crear nombre alternativo,
+es decir, en caso de que la foto no cargue, 
+aparece el nombre alternativo
+
+si la imagen viene en otra carpeta
+poner la carpeta DENTRO de la carpeta donde
+está el index y escribir la ruta desde
+ahí
+
+____________
+
+Sección 5
+
+Div
+
+<div class="logo">
+aqui se pone el logo
+</div>
+es para separar y dar estructura al html
+recordar poner un nombre en el class, si no 
+se hace, no tendría sentido usar el div
+Pueden haber muchos div dentro de 
+otros div
+DENTRO DEL <div class ="contenedor">
+va básicamente todo lo que tiene la 
+pagina.
+Lo que no es article (no habla por 
+si mismo) puede estar dentro de un div
+
+Nav
+
+el div del class navegación se puede
+cambiar por nav
+
+
+header
+
+<header>
+aqui van más cositas (div o header o lo
+que se quiera)
+En el header va generalmente lo que es
+logo y navegación
+</header>
+es más de estructura
+
+
+main
+
+<main class="contenido principal">
+</main>
+bajo el header
+ahí va lo más importante de la página
+servicios que ofrece la empresa...etc
+
+
+section
+Para grupos de contenido
+ej:varias imagenes y un texto
+va dentro del main y se reconoce porque
+dentro, generalmente se inicia con un 
+h1 o h2 o h3 o h...
+dentro de él pueden ir mas div
+<section>
+</section>
+
+
+article
+
+Generalmente va dentro de un section
+para lo que "habla por si mismo"
+por ejemplo entradas de un blog o articulos,
+noticias, eventos...
+lo demas puede ir en un div
+<article>
+</article>
+
+aside
+(slidebar)
+para crear contenido lateral (lo que va
+generalmente en el lateral derecho de la 
+pagina web)
+elemento "lateral" al main
+como un "próximamente"
+Va fuera del main
+se inicia con un h1 o h2 o h...
+
+-
+
+A este nivel ya estructuramos el body asi
+
+header(donde estan el logo y la navegacion)
+
+main(donde estan los section y article)
+	section
+	section
+	article
+
+aside
+	h2...
+
+-
+ 
+
+Footer
+es lo ultimo, va siempre 
+fuera del contenedor
+<footer>
+</footer>
+ahí va lo de "nosotros" "contacto" y eso
+y "todos los derechos reservados"
+
+
+Roles de area
+
+Sirven para hacer la web inclusiva
+Ver role=""
+No es impresindible para que el sitio 
+funcione, pero si es bueno hacerlo
+buscar en internet los distintos roles
+de cada etiqueta
+
+
+
+Comentarios 
+
+<--!kdshfjshfjkshfjk-->
+
+
+________________
+
+
+Seccion 6 
+
+
+Enlaces
+Menu de navegación
+
+a de ancla
+a de anchor
+
+<a href="pagina.html">aqui va el icono o
+lo que queramos que fuera un boton</a>
+
+para hacer le menu de navegación 
+se usa la etiqueta <ul></ul>
+y a cada link que vaya adentro, encerrarla
+en un <li></li>
+href="#" es cuando no hay enlace
+Ese es el enlace más común entre archivos
+de html
+
+
+enlazar a una pagina de otro dominio
+
+http://lapaginaquesea.com
+ej: <a href="http://google.com>ir a google
+</a>
+
+
+enlazar a algun lugar específico de la misma 
+página en la que estamos
+
+hacerle un id a la parte a donde
+queremos ir 
+y poner en el href del enlace 
+href="#elnombredelid"
+ejemplo:
+si queremos ir a 
+<section id="noticias">
+<h2>ultimas noticias</h2>
+</section>
+el enlace sería
+<a href="#noricias">ir a noticias</a>
+
+
+enlazar a un descargable
+
+luego del href="kjhdakj.pdf"
+o href="kjdshkja.mp4"
+o href="jsdhjsh.mp3" poner el atributo
+download
+
+<a href="descargable.pdf" download>Descargar
+aqui</a>
+
+
+abrir el enlace de otro dominio en 
+otra pestaña
+usar luego del href="http://google.com"
+target="_blank"
+
+hay varios targets pero este es el más 
+común
+
+__________________
+
+
+Sección 7
+
+
+Listas 
+hacer un <p>titulo de la lista</p> antes
+de declarar la lista
+
+
+Listas no ordenadas
+<ui></ui>
+significa unorder list
+dentro de ellas van los <li></li>
+significan list item
+dentro de los <li> puede ir lo que sea
+textos, parrafos, imagenes...
+incluso pueden ser mas listas anidadas
+para que sean hijos
+
+Lista ordenada
+es como la lista no ordenada, pero le
+aparecen numeros automáticamente que 
+la organizan
+<ol></ol>
+
+
+Listas de definición
+tienen más estructura:
+
+lista de definicion dl
+	lista de termino dt
+	lista de descipcion dd
+dentro de un dd podría haber otra lista
+lista ordenada o no ordenada
+ejemplo de lista de definicion:
+<dl>
+<dt>html</dt>
+	<dd>es para estructurar</dd>
+<dt>css</dt>
+	<dd>es para poner bonito</dd>
+</dl>
+
+_________________
+
+
+Sección 8
+
+
+Tablas
+
+ya casi no se usan, pero podrían servir 
+alguna vez
+
+<table>
+<caption><h1>sdalj</h1></caption>
+</table>
+
+la etiqueta caption es para hacer 
+una descripción de
+la tabla. como un título
+al table se le puede poner atributos de
+tamaño como width o height
+
+
+tienen 3 partes
+table head
+table body
+table footer
+esas tres partes van debajo del caption
+<thead></thead>
+dentro del thead 
+debe ir el trow 
+y dentro del trow va th
+así
+<thead>
+	<tr>
+		<th>sdasd</th>
+		<th>dasdasd</th>
+	</tr>
+</thead>
+
+cada uno de los th son los "títulos"
+de cada columna
+
+debajo del thead va el tbody y tfoot
+
+dentro del tbody y tfoot va tr y td
+(en vez de tr y th)
+
+repetir en el tbody un tr tras otro
+con el fin de agregar filas
+
+
+rowspan
+usarlo para combinar celdas en una columna
+
+coldspan 
+usado para combinar celdas en una fila
+
+para rowspan, lo primero es "dejar libre"
+o borrar el numero de celdas
+que estan debajo de la que 
+vamos a "repetir"
+luego contar cuantas celdas son
+y poner ese número de celdas "repetidas"
+en el valor del atributo rowspan=""
+<td rowspan="3">
+(si 3 celtas inferiores dicen lo mismo)
+
+para coldspan hacer lo mismo
+pero teniendo en cuenta que combinamos
+en horizontal
+
+se pueden usar atributos en los td (cada
+una de las celdas) como align="center"
+con el valor de center, lo centramos
+
+
+
+__________________
+
+
+Seccion 9
+
+formularios
+
+<forms class="formularios">
+</form>
+
+con eso se inicia. Van (obvio) en el body
+
+generalmente se necesita en cada campo
+un lable y un input
+el lable dice para qué sirve el campo
+el input permite la entrada
+<lable></lable>
+<input>sin cierre
+
+para input se pueden usar varios atributos
+<input type=text>
+es el más importante porque va a decir que
+tipo de campo va a ser
+
+text para introducir texto
+submit para crear el boton enviar, en este
+caso se usa el atributo value="enviar"
+
+name="nombre del campo"
+id="id del campo" que sirve para el for="id
+del campo" del lable
+placeholder="placeholderdelcampo" es texto
+que se ve clarito dentro del campo
+como cuando dentro de una barra de busqueda
+esta la lupa adentro
+autocomplete="on"para autocompletar con
+los que ya se han metido
+
+fieldset y legend
+Se usan para separar la información dentro
+del formulario. por ejemplo, si el
+formulario es de una persona, puede decir
+fieldset con 
+leyend informacion de identidad
+y con campos de nombre, apellido, cédula,
+..etc
+otro fieldset 
+con leyend información del cuerpo
+con campos de peso y talla
+y así
+
+luego otro fieldset con información de la
+familia... etc
+
+<fieldset>
+	<legend>
+
+	</legend>
+</fieldset>
+
+
+type="radio"
+para elegir entre varias opciones
+todas con el mismo name pero
+con distinto valor
+al final del input va el nombre de la
+opcion que va a ver el usuario
+<lable>sexo</lable>
+<input type="sexo" name="sexo" value="hombre">hombre
+<input type="sexo" name="sexo" value="mujer">mujer
+<input type="sexo" name="sexo" value="otro">otro
+
+cada uno de esos input puede tener 
+diferentes atributos con valor on 
+como checked o autofocus 
+
+
+select
+para seleccionar de una lista desplegable
+no usa input sino option, cada option
+con un valor diferente todos dentro
+de un select con una clase y nombre
+propio
+Es decir, dentro de un select, 
+meter las option
+<select class="comidas" name="comidas">
+<opction value="plato1">Plato1</option>
+<option value="plato2">Plato2</option>
+</select>
+
+cada option puede tener diferentes 
+atributos como selected
+
+
+datalist
+Se usa muy parecido al select
+pero más fácil
+va el lable, el input, el datalist
+y dentro los option que son más fáciles de 
+escribir en código que los del select
+<lable>curso</lable>
+<input list="propuesta" name="mi_propuesta">
+<datalist id="propuesta"><!--va el mismo
+id que el list-->
+
+	<option value="primero">
+	<option value="segundo">
+	<option value="tercero">
+</datalist>
+
+checkbox
+para cuando se le da al usuario la 
+posibilidad de elegir mas de una opcion por 
+campo
+por ejemplo cuando hay muchas marcas 
+y puede filtrar para ver solo algunas
+va el label
+y ahora son varios input, cuantos input como
+opciones le demos al usuario
+todos con el type "checkbox"
+y el value="opcion"
+por fuera va lo que ve el usuario en
+html, así
+
+<lable>opciones</lable>
+<input type="checkbox" value="opcion1">
+<input type="checkbox" value="opcion2">
+<input type="checkbox" value="opcion3">
+
+
+button
+son botones, como el que ya habíamos 
+visto de enviar pero con otra sintaxis
+más fácil
+
+En el type del button, va la funcion que queremos 
+hacer con él
+<button type="reset">nombre del boton</buton>
+el reset, por ejemplo es para resetear
+borrar todo
+
+se puede usar el atributo desible
+para dejar el boton a la vista del usuario
+pero deshabilitado
+
+
+color
+para que el usuario pueda escoger el color
+dentro de un diálogo de color
+va un lable y luego input
+<input type="color" name="color">
+se le puede poner name como 
+atributo
+
+date
+para que el usuario ingrese una fecha
+<input type="date" name="fecha">
+hay muchas variaciones según lo que se 
+le quiera mostrar al usuario, type 
+diferentes, como time, week, datetime-local
+month
+
+email
+funciona igual que el text
+también se le puede poner placeholder
+pero la diferencia con el text es que 
+en caso de equivocarse, pide validación
+es decir, pide que el correo electrónico
+tenga la estructuta a@b.c
+va con lable
+luego
+<input type="email" name="email" placeholder
+="nombre@dominio.com">
+
+url
+igual que el de email, también hace que se 
+cumpla la regla de que se introduzca
+http://www.dasdad.com
+<input type="url" name="url" placeholder=
+"http://www.algo.com">
+
+range
+para ponerle un rango a algo, moviendo
+un punto sobre una barrita
+va primero el lable
+luego input
+los únicos atributos diferentes que hay que 
+poner en el input son los de 
+min y max
+<input type=range" name=rango" min="0" max
+="1000">
+
+
+number
+como el de range, usa los atributos 
+min y max, pero en este caso es para hacer
+limitaciones en la escogencia de un número
+va el lable y luego 
+<input type="number" name="numero" min="10"
+max="1000">
+
+password
+igual que el text, pero cambia el type
+a password
+
+<input type="password" name="contraseña">
+
+
+atributo required
+
+ponerle required a los input que querramos
+que sean obligatorios para validar
+
+<input type="" name="" required>
+
+en caso de querer que no se apliquen los 
+required, poner en el form completo,
+el atributo novalidate
+
+<form class="formulario" novalidate>
+
+
+______________
+
+
+
+Sección 10
+ 
+
+Audio y video
+
+video
+dentro viene el source src igual que en las
+imagenes, pero este si tiene etiqueta de
+cierre. el atributo controls permite ver 
+el video y escuchar el audio con los
+botones de los reproductores
+
+<video>
+</video>
+
+
+audio
+igual que el video, pero este no tiene
+etiqueta de cierre
+
+
+Otra MEJOR forma de poner videos es
+quitar el src de la etiqueta de apertura
+y poner dentro del video
+la etiqueta source, a esa, darle el atributo
+src y enviarle la fuente del video
+por cada atributo src debe haber también un
+type en caso de video el type es video
+en caso del audio, el type es audio
+recordar poner la extención en el src y en
+el type luego de un /
+la extención en el type puede cambiar
+
+en caso de video, si se van a usar 
+varios archivos de un mismo video, por si
+acaso, dejar primero el mp4 que es el que
+leen los iphones y ipad. Y los audios,
+dejar primero el m4a
+
+
+<video controls>
+<source src="videito.mp4" type="video/mp4">
+<source src="videito.ogv" type="video/ogd">
+<p>tu navegador no soporta el video</p>
+</video>
+
+<audio controls>
+<source src="audiosito.m4a" type="audiosito/mp4">
+</audio>
+
+atributo preload
+para audio y video. puede ser 
+metadata, none o auto. 
+auto es más inteligente porque permite al
+navegador "descargar" el video de acuerdo 
+al consumo de datos del dispositivo, none
+no muestra ni el 1er frame del video
+sino hasta que el usuario le da play
+y metadata es como auto pero no inteligente
+el mejor parece ser auto
+
+atributo autoplay
+solo es autoplay, sirve para autoreproducir
+a penas se entra a la página web
+Es muy bacano entrar a un sitio web
+y que de primeras se vea un video 
+
+poster en video
+Poner una imagen en vez del video,
+en este caso es bueno dejar el preload en
+metadata, se puede dejar el poster para que
+el usuario tenga una imagen en el espacio 
+en donde va el video
+el atributo poster tiene como valor una
+ruta a una imagen
+Para usarlo, el lógico quitar el autoplay
+
+repetir un video o un audio
+atributo loop en cualquiera de los dos casos
+Si se quiere, va muy bien con el autoplay
+porque inicia solo y se repite
+
+alto y ancho de videos y audios
+width y height igual que las imágenes
+pero este guarda proporcion en los videos
+y a los audios no les hace nada
+
+
+

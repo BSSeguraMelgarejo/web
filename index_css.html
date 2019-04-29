@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+
+		<meta charset="utf-8">
+		<meta name="description" content="explorando html">
+		<title>Nuevo Html para estructurar</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/estilos.css">
+
+	</head>
+
+	<body>
+
+		<div class="contenedor">
+
+			<header role="banner" class=cont>
+
+				<div class="logo de cafe leyenda">
+					<img src="img/CafeLeyenda.jpg" height="150" alt="logo de cafe leyenda">
+					<br>
+					<p>pongo este logo porque no hay más fotos</p>
+					<br>
+					<br>
+				</div>
+
+				<nav class="navegacion" role="navigation">
+					menu aquí
+
+				</nav>
+
+			</header>
+
+			<main class="principal" role="main">
+			<ul><!-- para hacer menu -->
+				<li><a href="index.html">Entrar al index anterior</a></li>
+				<li><a href="nosotros.html">Sobre Nosotros</a></li>
+				<li><a href="#">sin enlace</a></li>
+				<li><a href="http://google.com" target="_blank">Ir a google</a></li>
+				<li><a href="#restaurantes">Ir a restaurantes</a></li>
+
+			</ul>
+
+				<section class="info_restaurantes">
+					<h3 id="nuestros">nuestros restaurantes</h3>
+					<div>
+						<h4 id="de_cuates" class="cuates">De Cuates</h4>
+						<img src="img/DeCuates.jpg" alt="logo de de cuates" height="120">
+					</div>
+					<div>
+						<h4 id="pollo">Pollo</h4>
+						<img src="img/Pollo.jpg" alt="logo de pollo" height="120">
+					</div>
+					<div class="cafe">
+					<h4 id="cafe_leyenda">Café Leyenda</h4>
+					<img src="img/CafeLeyenda.jpg" alt="logo de cafe leyenda" height="120">
+					</div>
+
+				</section>
+
+				<h3 class="ultima u">Ultimas Noticias</h3>
+				<artile>
+					<h4><em>noticia 1</em></h4>
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
+				</artile>
+				<article>
+					<h4><em>noticia 2</em></h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<a href="tareas_descargar.txt" download>Descargar esta noticia</a>
+
+				</article>
+
+			</main>
+
+			<aside role="complementary" class="aside">
+				<h2>Proximamente abrimos los nuevos restaurantes...</h2>
+				<p><em><b>desde aqui va la lista</b></em></p>
+				<ui id="lista_madre"><!--lista-->
+					<li>inicia lista</li>
+					<li>sigue lista</li>
+					<li>termina lista con hijos al final</li>
+						<ui id="lista_hija_final">
+							<li>
+								icono 1
+							</li>
+							<li>
+								icono 2
+							</li>
+						</ui>
+				</ui><!--cierra lista-->
+
+				<ol><!--lista-->
+					<li>hola 1</li>
+					<li>hola 2</li>
+					<li>hola 3</li>
+						<ul>
+							<li>otro elemento</li>
+							<li>otro más</li>
+						</ul>
+
+				</ol><!--cierra lista-->
+
+				<p>otra listica</p>
+				<dl>
+					
+					<dt>primer termino</dt>
+					<dd>lo que significa el primer termino</dd>
+					<dt>segundo termino</dt>
+					<dd>lo que significa el segundo término</dd>
+					<dt>otro termino más</dt>
+					<dd>
+						<ol>
+							<li>primer</li>
+							<li>segundo</li>
+						</ol>
+					</dd>
+
+				</dl>
+
+				<div>
+					<h3><em>mas comida</em></h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+
+				<div>
+					<h3><em>un poco más</em></h3>
+					<p id="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+
+				<div><!--hago este div para hacer tablas-->
+					
+					<table width="300">
+						<caption><h3>
+							esta es una tabla
+						</h3>
+							</caption>
+
+							<thead>
+								<tr>
+									
+									<th>
+										
+										primera fila
+									</th>
+									<th>
+										
+										segunda fila
+									</th>
+								</tr>
+
+							</thead>
+
+							<tbody>
+								<tr>
+									
+									<td rowspan="3">llenar 1</td>
+									<td>llenar 2</td>
+								</tr>
+								<tr>
+									
+									
+									<td>llenar 2</td>
+								</tr>
+								<tr>
+									
+									
+									<td>llenar 2</td>
+								</tr>
+								<tr>
+									
+									<td align="left">llenar 1</td>
+									<td>llenar 2</td>
+								</tr>
+
+							</tbody>
+
+							<tfoot>
+								<tr>
+								<td colspan="2" align="center">
+								no te lo puedes perder
+								</td>
+								<tr>
+							</tfoot>
+
+
+					</table>
+				
+
+				</div>
+
+
+			</aside>
+
+		</div>
+
+		<footer role="contentinfo">
+			<div class="nosotros">
+				<h4>nosotros somos...</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+				<!--<br>
+				<p>todos los derechos reservados &copy;</p>-->
+
+			</div>
+
+		</footer>
+
+	</body>
+
+</html>

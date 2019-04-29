@@ -1,0 +1,209 @@
+seccion 11
+
+hay que hacer el enlace entre css y html
+en el head de html escribir 
+<link rel="stylesheet" href="css/estilos.css">
+con ese enlace en cada página del sitio web
+se hace el enlace para el mismo css
+
+sintaxis de css
+en css va el selector, es decir, la etiqueta
+o el id o la class 
+de html que vamos a modificar, luego 
+abrir llaves y dentro poner la declaración,
+el nombre de la propiedad que vamos a 
+cambiar y el valor que le vamos a dar a 
+esa propiedad
+
+ej:
+
+h2
+{
+color:blue;
+}
+
+tomar todos los h2 y ponerlos en color azul
+
+las declaraciones pueden ponerse como en c++
+de forma horizontal, separados por punto y 
+coma, o de forma vertical, también separados 
+por punto y coma
+
+si queremos que el selector sea 
+una etiqueta de html
+
+nombre de la etiqueta
+{}
+
+id de html
+
+#nombredelid
+{}
+
+class de html
+
+.nombredelaclase
+{}
+
+resetear el css del navegador por defoult
+los navegadores por defecto usan hojas
+de estilos, y estos defoult se pueden 
+resetear
+Además, eso permite que en todos los
+navegadores se vea igual nuestra página
+usar normalize.css el codigo está
+en internet 
+
+comentarios
+/*   kjfghkdhgdhg */
+
+
+_____________
+
+seccion 12
+
+#
+usar el numeral para agregar el css
+de los id
+
+#nombredelid
+{}
+
+.
+usar el puno para agregar el css
+de los class
+
+.nombredelclass
+{}
+
+
+mezclar id con classs
+poner en css el llamado al id y en seguida
+el llamado a la class.
+Se usa cuando en html una etiqueta tiene
+id y tambien class
+
+#nombredelid.nombredelclass
+{}
+
+en caso de que en css se haga otro llamado
+solo para la class, ese no se tomará en 
+cuenta, porque prevalece el que tiene más
+jerarquía, en este caso, el que mezcla
+id con class
+
+
+selectores con dos class
+
+puede pasar que en html tengamos etiquetas
+con dos clases. Separados por espacio
+
+<h2 class="nombre_p otro">hola</h2>
+
+entonces en css se llama de la
+siguiente manera
+
+.nombre_p.otro
+{}
+
+o también así
+
+.otro.nombre_p
+{}
+
+
+selectores para elementos de html
+
+es lo que hemos estado viendo, pero en 
+este caso, es más generico. Si uno quiere
+que todos los p del sitio web o de la página
+web tengan el mismo color
+ponerlo en css normal
+
+p
+{
+color:green;
+}
+
+
+selectores para elementos html con id
+
+para ser más específico, si todos los p
+estan de un solo color, pero hay un p que
+tiene un id y ese va a ir de otro color
+
+p#nombredelid
+{}
+
+ese selector tiene más peso
+
+
+selectores para elementos html con class
+
+también para ser más específico, si un 
+section tiene también una clase y 
+queremos qe tenga un fondo diferente
+
+nombredelaetiqueta.nombredelclass
+{}
+
+
+selector universal
+
+* 
+{}
+
+sirve para que todo en la página quede de 
+un solo color o tenga una misma fuente
+o un mismo tamaño...
+Si un atributo no es tenido en cuenta
+porque ya se incluyo en otro selector
+de mayor peso que este,
+escribir en seguida al atributo un 
+!important;
+
+*
+{
+color:red!important;
+}
+
+también sirve para que, si tengo un div
+o un selection con alguna class o id 
+específica y adentro hay muchas cosas, 
+hacerle modificaciones a esas cosas
+sin que tengamos que hacerlo una por una
+
+.nombredelclass *
+{}
+
+
+selectores por grupo
+
+si queremos que algun atributo cambie en 
+varias etiquetas p, a, h2, h3... 
+solo hay que separarlas por coma al hacer
+la declaracion
+
+a, p, h2
+{}
+
+
+selescores descendientes
+
+si en html dentro del nav hay un ul, 
+dentro del ul hay li y dentro de los li 
+hay a entonces en css se puede escribir así
+primero el mas general y al final los más
+específicos, se van separando por espacios
+
+nav
+{}
+
+nav ul
+{}
+
+nav ul li
+{}
+
+nav ul li a
+{}

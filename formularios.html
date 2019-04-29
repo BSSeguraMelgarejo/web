@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="formularios de html">
+
+	<title>fomularios</title>
+</head>
+<body>
+
+	<h2>formularios de HTML5</h2>
+
+	<form class="formulario">
+		
+		<fieldset>
+			<legend>datos personales</legend>
+
+			<label for="nombre">nombre</label>
+			<input type="text" name="nombre" autocomplete="on" placeholder="tu nombre" id="nombre">
+
+			<br>
+
+			<label for="apellido">apellido</label>
+			<input type="text" name="apellido" id="apellido" placeholder="apellido" autocomplete="on">
+
+			<br>
+
+			<label>fecha de nacimiento</label>
+
+			<input type="date" name="fecha">
+
+			<br>
+
+			<label>correo electrónico</label>
+			<input type="email" name="email" placeholder="correo@gmail.com">
+
+			<br>
+
+			<label>sitio web</label>
+
+			<input type="url" name="url" placeholder="http://www.ejemplo.com">
+
+			<br>
+
+			<label>Sexo</label>
+			<br>
+			<input type="radio" name="sexo" value="hombre">hombre
+			<input type="radio" name="sexo" value="mujer" checked="on">mujer
+			<input type="radio" name="sexo" value="otro">otro
+
+			<br>
+
+			<label>que tanto le gusta la comida</label>
+
+			<input type="range" name="rango" min="0" max="1000">
+
+			<br>
+
+			<lable>Cuántos platos va a pedir</lable>
+
+			<input type="number" name="numero" min="10" max="100">
+
+
+		</fieldset>
+
+		<fieldset>
+			<legend>
+				restaurantes
+			</legend>
+
+			<label>restauranticos</label>
+
+			<select class="restaurante" name="restaurante">
+				
+				<option value="de_cuates">De Cuates</option>
+				<option value="pollo">Pollo</option>
+				<option value="cafe_leyenda" selected>Café Leyenda</option>
+
+			</select>
+
+			<br><br>
+
+			<label>otros restaurantes</label>
+
+			<input type="datalist" list="otros_restaurantes" name="mas_restaurantes" autocomplete="off">
+
+			<datalist id="otros_restaurantes">
+				
+				<option value="restaurante uno">
+				<option value="restaurante dos">
+				<option value="restaurante tres">
+
+			</datalist>
+
+			<br><br>
+
+			<label>marcas de comida</label>
+			<br>
+			<input type="checkbox" value="fruco">Fruco
+			<br>
+			<input type="checkbox" value="doria">Doria
+			<br>
+			<input type="checkbox" value="brisa">Brisa
+			<br>
+
+			<
+
+		</fieldset>
+
+		<fieldset>
+			<legend>salsa de colores</legend>
+			<label>Ingrese el color que quiera para la salsa de su comida</label>
+
+			<input type="color" name="color">
+
+		</fieldset>
+
+
+		<fieldset>
+			
+		<legend>loguearse</legend>
+
+		<label>Usuario</label>
+		<br>
+		<input type="text" name="nuevo_usuario" placeholder="nuevo usuario" required>
+		<br>
+		<br>
+		<label>Contraseña</label>
+		<br>
+		<input type="password" name="contraseña" placeholder="contraseña" required>
+
+		</fieldset>
+		
+		<fieldset>
+		<legend>botones</legend>	
+			<button type="reset">borrar</button>
+
+			<input type="submit" name="enviar" value="enviar">
+
+
+		</fieldset>
+
+
+
+
+	</form>
+</body>
+</html>
