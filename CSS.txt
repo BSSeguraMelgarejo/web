@@ -98,6 +98,7 @@ selectores con dos class
 puede pasar que en html tengamos etiquetas
 con dos clases. Separados por espacio
 
+esto va en html
 <h2 class="nombre_p otro">hola</h2>
 
 entonces en css se llama de la
@@ -188,7 +189,7 @@ a, p, h2
 {}
 
 
-selescores descendientes
+selecores descendientes
 
 si en html dentro del nav hay un ul, 
 dentro del ul hay li y dentro de los li 
@@ -207,3 +208,124 @@ nav ul li
 
 nav ul li a
 {}
+
+
+selector primer hijo
+
+para cuando una etiqueta tiene dentro otra
+etiqueta que tiene dentro otra etiqueta...
+y queremos que algún atributo le cuente 
+solo a alguna de las etiquetas que está 
+interna
+
+externa externa > interna
+{}
+
+así afectará solamente al interno
+
+También es importante si hay varios en la 
+misma jerarquia dentro de la misma etiqueta
+por ejemplo, varios articles dentro de un 
+section y solo queremos afectar a un solo
+article
+
+
+
+selector de elementos adyacentes
+para modificar al selector que en html está 
+inmediatamente seguido al que mencionamos 
+primero
+
+<h2 id="hola">sadas</h2>
+<p>asdsdfsdfs</p>
+
+en este caso, vamos a modificar p desde h2
+en css
+
+h2#hola + p
+{}
+
+así modificamos p 
+
+Es útil cuando trabajamos con p y no podemos
+acceder a los html que no tienen class
+
+
+selector de enlaces
+a[href*="google.com"]
+{}
+
+
+selectores para atributos de html
+Si en html tenemos una etiqueta con atributo
+podemos usar el nombre del atributo para
+modificar la etiqueta en css
+
+html
+<h3 class="hola">slkdalj</h3>
+
+css
+[class="hola"]
+{}
+
+sería lo mismo que hacer
+h3.hola
+{}
+
+y sería lo mismo que hacer
+.hola
+{}
+
+Pero todos son útiles
+
+
+selectores a paseudoclasses
+en realidad es para hacer hover, focus y 
+esas cosas
+el más usado es hover
+
+pero podemos usarlos todos de una vez
+
+nombredelselector:focus,
+nombredelselector:visited,
+nombredelselector:active
+{}
+
+el más usado es el visited
+
+de hecho se puede usar solo 
+nombredelselector:visited
+{}
+
+y el hover si se usa casi siempre
+
+nombredelselector:hover
+{}
+
+
+
+pseudoclass nth-child()
+
+hijo nth
+
+dentro de los parentecis va un numero
+
+nombredelselector:nth-child(2)
+{}
+
+es decir, modifique el hijo 2 de todos los
+hijos que hay dentro de nombredelselector
+
+también se puede usar con tablas 
+dentro de los parentesis puede ir odd o even
+
+table tbody tr:nth-child(odd)
+{}
+para modificar solo los impares
+
+table tbody tr:nth-child(even)
+{}
+para modificar solo los pares
+
+
+
