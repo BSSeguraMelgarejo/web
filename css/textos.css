@@ -1,0 +1,38 @@
+/*font-family*/
+body{
+	font-family: Helvetica, sans-serif;
+}
+h3{
+
+	font-family:Arial,'Times New Roman', serif;
+	/*text-transform: uppercase*/
+	text-transform:uppercase;
+}
+/*@font-face*/
+/*
+Alternativa a google fonts
+(o google fonts es una alternativa de esta)
+Yo prefiero usar google fonts
+*/
+
+/*font-size*/
+table{
+	font-size: 20px;	
+/*font-style*/
+	font-style:italic;
+}
+
+h5#nuestros em{
+font-style:normal;
+}
+
+h4{
+	text-transform: capitalize;
+	/*text-transform:lowercase*/
+}
+
+
+p{
+	/*font-variant*/
+	font-variant:small-caps;
+}

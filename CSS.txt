@@ -329,3 +329,77 @@ para modificar solo los pares
 
 
 
+___________
+
+Seccion 13
+
+
+font-family
+para fuentes seguras (que siempre están en 
+el pc) se pueden agregar varias, en caso
+de que una no cargue, carga la siguiente 
+
+h2
+{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+font-size
+tamaño
+h2
+{
+font-size:10px;
+}
+
+rem y em son otras medidas, recomendadas 
+para responsive
+
+
+
+font-style
+para hacer cambios entre normal y italic
+
+normal deja la letra "normal" y sirve para
+"remover" una etiqueta <em></em> que hayamos
+puesto en html
+
+h2 em
+{
+font-style:normal;
+}
+
+y italic sirve para dejarla en cursiva
+
+h2
+{
+font-style:normal;
+}
+
+
+
+text-transform: uppercase
+para que quede todo en mayúscula
+
+text-transform: lowercase
+para que quede todo en minúscula
+
+text-transform: capitalize
+para que quede todo con letras capitales
+(mayúscula la primera)
+
+h2
+{
+text-transform:uppercase
+}
+
+
+font-variant
+para hacerlas todas mayusculas
+pero la primera letra de cada palabra es 
+más grande
+
+h2
+{
+font-variant:small-caps;
+}
