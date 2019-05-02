@@ -7,6 +7,10 @@ h3{
 	font-family:Arial,'Times New Roman', serif;
 	/*text-transform: uppercase*/
 	text-transform:uppercase;
+	text-align:center;
+	/*letter-spacing*/
+	letter-spacing:6px;
+
 }
 /*@font-face*/
 /*
@@ -35,4 +39,13 @@ h4{
 p{
 	/*font-variant*/
 	font-variant:small-caps;
+	/*font-weight*/
+	font-weight:bold;
+	/*line-height*/
+	line-height:40px;
+	/*text-align*/
+	text-align:justify;
+	/*text-indent*/
+	text-indent: 45px;
 }
+

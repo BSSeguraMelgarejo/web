@@ -403,3 +403,79 @@ h2
 {
 font-variant:small-caps;
 }
+
+
+font-weight
+para que esté bold o normal
+también puede ser lighter
+
+h4
+{
+font-weight:bold;
+}
+
+
+line-height
+para interlineado
+se mide en pixeles
+
+h3
+{
+line-height:30px;
+}
+
+también sirve para centrar textos de
+una sola linea
+como h1 o h2 o h..
+
+
+font
+propiedad que puede tener un monton de 
+valores, se usa para ahorrar codigo
+y decirle a la letra que sea
+italica con small.caps con font-weight
+normal con font-size 30px/ con line-height
+20px todo separado por espacios
+
+a mi no me gusta casi
+
+h2
+{
+font: italic small-caps normal 30px/20px;
+}
+
+
+
+text-align
+para alinear el texto
+
+puede ser 
+center
+right
+left
+justify
+
+p
+{
+text-align:justify;
+}
+
+
+letter-spacing
+para espaciado entre letras
+
+h3
+{
+letter-spacing:3px;
+}
+
+
+text-indent
+para indentar texto
+hacer sangrías y esas cosas
+
+h3
+{
+text-indent:10px;
+}
+
