@@ -479,3 +479,109 @@ h3
 text-indent:10px;
 }
 
+
+______
+
+seccion 14
+
+contenedores
+
+
+background
+escoger el fondo del contenedor
+pueden ser colores
+
+div
+{
+background:red;
+}
+puede ser transparent
+
+
+height y width
+Para el ancho y alto de todos los 
+contenedores
+se pueden definir por px
+
+img.class
+{
+height:100px
+}
+
+se pueden definir por & de la ventana
+
+div 
+{
+width:20%
+}
+
+se pueden definir por ancho/alto completo
+
+article
+{
+width:100vw;/*de viewport width*/
+}
+
+
+
+margin
+Hay margenes arriba, abajo, izq y der
+
+h3
+{
+margin-top:20px;
+margin-bottom:50px;
+margin-left:30px;
+margin-right:10px;
+}
+
+también se puede en porcentajes
+
+margin-right:10%;
+
+para centrar el body usar el truco auto
+
+margin-right:auto;
+margin-left:auto; 
+
+
+padding
+hacia adentro del contenedor
+tambien puede ser arriba, abajo. izq y der
+
+h4
+{
+padding-top:30px;
+padding-bottom:50px;
+padding-left:100px;
+}
+
+
+atajo para margin y padding
+
+usar solo la palabra margin y solo la 
+palabra padding
+los argumentos se separan por espacio y 
+se escriben los valores en orden de las 
+manecillas del reloj
+
+h4
+{
+margin:20px 30px 20px 5px;
+padding:0 5px 20px 15px 0;
+}
+
+
+colapso de margin
+
+LO MEJOR ES NO HACER MARGENES HACIA ABAJO
+SOLO HACIA ARRIBA Y HACIA LOS LADOS
+
+posibles soluciones
+poner en el contenedor las siguientes
+declaraciones como si fuera cualquier 
+atributo
+
+overflow:hidden;
+tambien
+border.bottom: 1px black;

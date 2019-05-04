@@ -1,0 +1,49 @@
+body{
+/*background*/
+	background:gray;
+}
+
+div.contenedor{
+	background:yellow;
+	width: 60%;
+	/*margin-right: auto;
+	margin-left: auto;*/
+	/*padding-left: 20px;
+	padding-right: 20px;*/
+	padding:40px 20px 0 20px;
+	/*margin-top: 30px;*/
+	margin:30px auto 0 auto;
+	/*
+	padding-top: 40px;
+	*/
+}
+
+header{
+	background:blue;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	padding-bottom: 40px;
+}
+
+article.articulo1 {
+	background:red;
+	width: 200px;
+}
+
+article.articulo2{
+	background:green;
+	width: 60%;
+}
+
+footer{
+	background:blue;
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+main.principal{
+margin-bottom: 20px;
+}
