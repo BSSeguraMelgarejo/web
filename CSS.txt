@@ -740,10 +740,83 @@ fondos, se diferencia uno del otro
 separando por , un fondo de otro
 
 
+______________
+
+seccion 15
+Colores
 
 
+por nombre de color
+
+color:blue;
+red
+green
+blue
+
+poner el nombre del color
+o backgroung:blue;
 
 
+por hexadecimal
+poner # y el hexadecimal
+
+color:#325146;
 
 
+por rgb
+poner rgb(255,255,255)
 
+por rgba
+poner rgba(255,255,255,0.6)
+
+por hsl
+hsl(10, 15%, 20%)
+tambien puede ser hsla(,,,0.2)
+
+
+opacity
+para la opacidad del selector completo
+si por ejemplo tenemos un div y dentro hay 
+imagenes, texto, fondo, etc... todo va a 
+tener esa opacidad
+va de 0 a 1 
+0 no se ve nada del elemento
+1 se ve perfecamente el elemento
+
+opacity: 0.5;
+
+es mejor usar rgba y hsla
+
+
+Sombras
+text-shadow:10px 10px 10px rgb(56,58,255)
+
+para textos
+enviar los valores de sobra horizontal
+vertical blur (distorción) y el color de 
+la sombra. El color de la sombra puede
+ser en nombre del color, hexadecimal o 
+rgb
+
+box-shadow:10px 10px 10px 10px rgb(15,20,16)
+
+para contenedores
+tiene un valor más que es el de "expansión"
+del borde
+
+
+degradados
+
+background: linear-gradient(,)
+linear
+
+poner adentro los dos colores
+
+backgroung:radial-gradient(,)
+radial
+
+pomer los dos colores
+
+pero lo mejor es usar
+colorzilla. Es más fácil
+y rápido

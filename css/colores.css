@@ -1,0 +1,32 @@
+body{
+	/*background-color:blue;*/
+	background-color:#A9E2F3;
+}
+
+h3{
+	color:#585695;
+	text-shadow: 10px 10px 2px black;
+}
+
+
+aside{
+	background-color:hsl(10,50%,60%);
+	opacity: 0.5;
+}
+
+footer{
+	background-color:rgba(50,50,50,0.2);
+}
+
+div.idea2{
+	box-shadow: 10px 10px 10px 10px rgb(255,0,0);
+}
+
+div.idea1{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f1e767+0,feb645+44 */
+background: #f1e767; /* Old browsers */
+background: -moz-linear-gradient(45deg, #f1e767 0%, #feb645 44%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #f1e767 0%,#feb645 44%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #f1e767 0%,#feb645 44%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
