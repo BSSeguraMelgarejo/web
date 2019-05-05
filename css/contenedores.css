@@ -1,3 +1,7 @@
+*, *:before, *:after{
+	box-sizing: border-box;
+}
+
 body{
 /*background*/
 	background:gray;
@@ -5,34 +9,44 @@ body{
 
 div.contenedor{
 	background:yellow;
-	width: 60%;
+	width: 90%;
 	/*margin-right: auto;
 	margin-left: auto;*/
 	/*padding-left: 20px;
 	padding-right: 20px;*/
 	padding:40px 20px 0 20px;
 	/*margin-top: 30px;*/
-	margin:30px auto 0 auto;
+	margin:50px auto 0 auto;
 	/*
 	padding-top: 40px;
 	*/
 }
 
 header{
-	background:blue;
+	/*position: fixed;*/
+	background: white;
 	margin-top: 20px;
 	margin-bottom: 50px;
 	padding-bottom: 40px;
+	background-image:url(../img/CafeLeyenda.jpg);
+	background-size: 100px;
+	background-repeat: no-repeat;
+	top:0;
+	background-position: center center;
 }
 
 article.articulo1 {
 	background:red;
 	width: 200px;
+	border: 20px;
+	/*box-sizing:border-box;*/
 }
 
 article.articulo2{
 	background:green;
-	width: 60%;
+	width: 200px;
+	padding:20px 0px 100px 30px;
+	/*box-sizing:border-box;*/
 }
 
 footer{
@@ -46,4 +60,71 @@ footer{
 
 main.principal{
 margin-bottom: 20px;
+width:500;
+float:left;
+background:blue;
+padding-top: 300px;
+padding-bottom: 20px;
+}
+
+aside{
+	background:purple;
+	width:400px;
+	float:right;
+}
+
+.clearfix:before,
+.clearfix:after{
+	content:'';
+	display: table;
+}
+.clearfix:after{
+	clear:both;
+}
+
+table{
+	background:red;
+}
+
+.padre{
+	margin-top: 50px;
+	width:200px;
+	height: 200px;
+	background:red;
+	position: relative;
+	float:right;
+	border-radius: 50px 0px 20px 30px;
+}
+
+.hijo{
+	width: 100px;
+	height: 100px;
+	background:gray;
+	position: absolute;
+	bottom:50px;
+	left:150px;
+}
+
+.hijo:hover{
+	border-radius:50%;
+}
+
+h3{
+	background:orange;
+	display: inline-block;
+	width:150px;
+}
+
+.padre2{
+	display: table;
+	height: 200px;
+	width: 100px;
+	background:red;
+}
+
+.hijo2{
+display: table-cell;
+vertical-align: middle;
+text-align: center;
+/*background:blue;*/
 }

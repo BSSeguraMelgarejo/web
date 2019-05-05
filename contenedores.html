@@ -14,12 +14,15 @@
 
 	<body>
 
-		<div class="contenedor">
+		<div class="contenedor clearfix">
 
 			<header role="banner" class=cont>
 
-				<div class="logo de cafe leyenda">
+				<div class="logo_de_cafe_leyenda">
+				<!-- cambio de imagen en html por imagen en css
 					<img src="img/CafeLeyenda.jpg" height="150" alt="logo de cafe leyenda">
+				-->
+				
 					<br>
 					<p>pongo este logo porque no hay más fotos</p>
 					<br>
@@ -33,7 +36,7 @@
 
 			</header>
 
-			<main class="principal" role="main">
+			<main class="principal clear" role="main">
 			<ul id="menu_principal"><!-- para hacer menu -->
 				<li><a href="index.html">Entrar al index anterior</a></li>
 				<li><a href="#">Sobre Nosotros</a></li>
@@ -44,6 +47,23 @@
 				<p>para probar lo del selector de primer hijo</p>
 
 			</ul>
+
+			<p>otra listica</p>
+				<dl>
+					
+					<dt>primer termino</dt>
+					<dd>lo que significa el primer termino</dd>
+					<dt>segundo termino</dt>
+					<dd>lo que significa el segundo término</dd>
+					<dt>otro termino más</dt>
+					<dd>
+						<ol>
+							<li>primer</li>
+							<li>segundo</li>
+						</ol>
+					</dd>
+
+				</dl>
 
 				<section class="info_restaurantes">
 					<h5 id="nuestros"><em>nuestros restaurantes</em></h5>
@@ -85,9 +105,23 @@
 
 				</article>
 
+				<div class="padre clearfix">
+					<a href="http://google.com" target="_blank">
+					<div class="hijo">
+					
+					</div>
+					</a>
+				</div>
+
+				<div class="padre2">
+					<div class="hijo2">
+						texto para centrar
+					</div>
+				</div>
+
 			</main>
 
-			<aside role="complementary" class="aside">
+			<aside role="complementary" class="aside clearfix">
 				<h2>Proximamente abrimos los nuevos restaurantes...</h2>
 				<p><em><b>desde aqui va la lista</b></em></p>
 				<ul id="lista_madre"><!--lista-->
@@ -114,43 +148,6 @@
 						</ul>
 
 				</ol><!--cierra lista-->
-
-				<p>otra listica</p>
-				<dl>
-					
-					<dt>primer termino</dt>
-					<dd>lo que significa el primer termino</dd>
-					<dt>segundo termino</dt>
-					<dd>lo que significa el segundo término</dd>
-					<dt>otro termino más</dt>
-					<dd>
-						<ol>
-							<li>primer</li>
-							<li>segundo</li>
-						</ol>
-					</dd>
-
-				</dl>
-
-				<div>
-					<h3><em>mas comida</em></h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>
-
-				<div>
-					<h3><em>un poco más</em></h3>
-					<p id="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>
 
 				<div><!--hago este div para hacer tablas-->
 					

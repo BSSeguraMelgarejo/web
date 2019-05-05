@@ -584,4 +584,166 @@ atributo
 
 overflow:hidden;
 tambien
-border.bottom: 1px black;
+border.bottom: 1px solid black;
+
+
+
+box-sizing:border-box;
+
+para que al ponerle valores al padding 
+o al border de algún contenedor, no se de
+empiezen a "desacomodar" entre selectores
+
+se puede incluir en los selectores 
+que no queremos desacomodar o poniendo un 
+selector universal al iniciar el css
+
+*, *:before, *after
+{
+box-sizing: border-box;
+}
+
+
+bordes
+
+con border-top
+border-bottom
+border-right
+border-left
+
+
+border-style:solid
+tambien puede ser dashed o double
+
+border-color
+
+
+
+float y clearfix
+
+float es para hacer los contenedores
+flotantes y clearfix es una clase de html
+para arreglarlo
+
+.clearfix:before,
+.clearfix:after{
+	content:'';
+	display: table;
+}
+.clearfix:after{
+	clear:both;
+}
+
+PONERSELO AL CONTENEDOR PUEDE SERVIR
+PARA QUE A LA IZQUIEDA QUEDE EL MAIN Y A LA
+DERECHA QUEDE EL ASIDE
+
+
+
+position:relative/absolute/fixed
+
+RELATIVE PARA EL PADRE
+ABSOLUTE PARA EL HIJO
+FIXED PARA LO QUE SIEMPRE VA A ESTAR EN 
+PANTALLA
+
+position:relative; habilita las funciones
+de bottom, top, right y left para el hijo
+
+
+position:fixed 
+generalmente se le pone a las barras del
+header para que todo el tiempo esten
+presentes.
+en ese caso, hay que ver si ponerle margin
+al contenedor principal para que no lo tape
+lo que este en fixed
+
+
+display
+como va a ser el ancho del contenedor
+
+display:none;
+no permite que se vea el conenedor
+
+display:block;
+es el que viene por defecto, hace que el 
+contenedor tenga un ancho del 100%
+(como cuando le ponemos background a un 
+h1 o h2 o h3 o hn)
+
+display:inline;
+toma el ancho del contenedor, como el ancho 
+de lo que tiene adentro, en este caso, si 
+se lo ponemos a un h3, el ancho de ese
+contenedor terminará donde termine la letra 
+que tiene ese h3
+En este caso no se puede modificar ese 
+ancho
+
+display:inline-block;
+es como inline, pero si se le puede
+modificar el ancho y lo que hace es 
+modificar el contenido del contenedor
+es decir, reacomoda lo que hay de letra
+en el contenedor
+
+display:table/table-cell
+cuando al tener un contenedor padre y 
+un hijo que queremos centrar vertical
+dentro de ese padre, al padre lo
+ponemos en display:table y al hijo en 
+display:table-cell.
+al hijo le ponemos la propiedad 
+vertical-aling:middle
+
+
+
+border-radius
+esquinas redondeadas
+
+se ponen en pixeles, separando los 
+argumentos por espacio
+
+tambien se puede por porcentaje
+border-radius:50%
+para hacer circulos
+
+
+
+background-image: url();
+hay que pasarle la dereccion de la imagen
+(../img/nombredelaimagen.extención);
+.. es volver a la carpeta raíz
+
+blackground-repeat:no-repeat
+o repeat-x
+o repeat-y
+
+background-size:en pixeles;
+
+
+background-position:
+para acomodar el fondo
+puede ser center center
+o left bottom
+o top right
+o...
+y también en pixeles, para moverse en x
+y después en y
+
+si hay varias imagenes en el fondo,
+poner una coma despues de url y poner otro
+url
+De hecho en todas las propiedades de los 
+fondos, se diferencia uno del otro
+separando por , un fondo de otro
+
+
+
+
+
+
+
+
+
