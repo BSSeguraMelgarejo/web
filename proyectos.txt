@@ -1,0 +1,39 @@
+BLOG
+
+---
+html
+
+1. crear el header 
+dentro va el logo 
+
+2. fuera del header va el nav
+ponerle el menu principal como ul
+y si dentro de alguno de los items del 
+menú se va a desplegar algo más, entonces
+ponerlo dentro de otro ul
+Recordar que dentro de cada li de los ul
+debe estar el a con href a donde va a ir
+cada item
+
+3. Fuera del nav poner el div class "contenido"
+dentro el main
+dentro los article
+cada article tiene h2, img, dos p y un a 
+con class "leer mas"
+
+hay 3 article iguales
+
+
+4. Hacer el aside
+dentro va un h3 y un ul con 5 li
+cada uno con un a href
+
+5. footer
+hacer un div de contenido con dos div
+un div con h2 y un p sobre nosotros
+un div con nav (igual al primer nav 
+pero sin multiniveles)
+despues del contenido del footer
+pero dentro del footer, poner un p
+class "copyright"  que diga todos los 
+derechos reservados
