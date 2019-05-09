@@ -37,3 +37,112 @@ despues del contenido del footer
 pero dentro del footer, poner un p
 class "copyright"  que diga todos los 
 derechos reservados
+
+--
+css
+
+1. hacer el box-sizing: border-box
+html
+{
+box-sizing:border-box;
+}
+*, *:before, *:after
+{
+box-sizing:inherit;
+}
+*
+{
+margin:0;
+padding:0;
+}
+
+con los ultimos dos corchetes, lo que se
+hace es quitar los padding y margin que el 
+navegador da por defecto
+
+2. Ponerle el font-family al body
+
+3. Ponerle un poco de padding al header
+20px arriba y abajo
+
+4. Ponerle un width de 1200px al contenedor
+(tanto al del header como al del contenido
+principal. Y ponerle el margin:0  auto;
+para que quede centrado 
+
+5. EN HTML 
+Meter el nav principal dentro de un 
+div con class navegacion
+
+6. Ponerle el fondo al background del
+.navegacion
+
+7. Ponerle width de 1200px al nav 
+y centrarlo
+
+8. Ponerle posición relativa al nav
+porque despues sus hijos van a tener 
+posición absoluta 
+
+9. Quitar los punticos de los ul que
+estan dentro del nav
+
+10. Usar > para que solo se vean afectados
+los ul li del primer nivel de la navegación
+y ponerles float:left
+
+nav>ul>li
+{
+float:left
+}
+
+11. Como la lista se dañó un poco 
+(en diseño) con el float, hay que limpiar 
+el float 
+nav ul::after
+{
+content:'';
+display:block;
+clear:both;
+}
+
+/*yo lo hice con clearfix*/
+/*por si acaso, despues se puede cambiar*/
+
+
+12. ponerle display:inline-block 
+a los enlaces de la lista, width de 200px
+color blanco y sin decoración
+(text-decoration:none)
+centrarlos y ponerles padding
+Todo eso en el mismo selector
+
+13. Hacer el hover de los selectores de
+enlaces del nav y ponerles color diferente
+
+14. trabajar con el segundo nivel de ul
+nav ul ul {
+}
+ponerle posición absoluta (anteriormente al 
+nav le habíamos puesto posición relativa)
+Ponerle top:100%
+background-color: rgba();
+display:none;
+para que no se puedan ver a primera 
+impresión
+
+La idea es que cuando demos hover sobre los 
+li de la primera ul se vea la ul de
+segundo nivel
+
+nav ul li:hover>ul
+{
+display:block;
+}
+
+El display:block lo hace visible
+
+15. 
+
+
+
