@@ -142,7 +142,71 @@ display:block;
 
 El display:block lo hace visible
 
-15. 
+15. Dividir el main en width 70% y el 
+aside en 30%
+
+el main a la izquierda y el aside a la
+derecha
+Limpiar los float:
+Como tanto el main como el aside
+estan dentro del div.contenido
+copiar el codigo de limpiar float en
+las propiedades del div.contenido
+
+Ponerle un padding al main de 20px
+
+16. ponerle margin top de 30px al 
+article. 
+
+dejar las imagenes de los article a la
+izquierda y dejarlos de 300px y algo de margin
+para esas imagenes
+
+a los parrafo de los article ponerles 
+line-height:2 para que esté un poco más 
+separado entre lineas. Y text-align:justify
+para justificarlo
+
+EN HTML
+con la clase boton (de html)
+ponerle en css color de fondo azúl
+y algo de padding 
+display inling-block y algo de margin-top
+para que se separe un poco
+
+El texto de los botones en 
+font-weight:bold
+de color blanco 
+y text-transform uppercase para que quede 
+en mayusculas
+y text-decoration:none;
 
 
+Ponerle color a los h2
+
+17. Ponerle al aside color azul y fondo 
+blanco en cada li de la ul, quitarle
+las bolitas de la lista, separarlo un 
+poco y que al pasar el hover cambie de color
+a azul
+
+18. Ponerle margin top al footer
+tambien padding top cambiarle el color
+de fondo
+el titulo del footer cambiarle al color
+al div de nosotros cambiarle el color y 
+dejarlo hacia la izquierda
+al menu del footer ponerlo a la derecha 
+dejar el menu del footer de 30% y el
+nosotros de 40%
+(no siempre tienen que sumar 100%)
+el nav del footer ponerle width auto
+para que no se salga y se centre
+los a de los li de la ul que hay en el nav 
+del footer centrarlos de la misma forma
+
+recordar limpiar los footer
+
+el "todos los derechos.." centrarlo y 
+dejarlo en blanco
 
