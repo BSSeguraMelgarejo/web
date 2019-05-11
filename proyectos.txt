@@ -1,6 +1,6 @@
 BLOG
 
----
+--------------------
 html
 
 1. crear el header 
@@ -38,7 +38,7 @@ pero dentro del footer, poner un p
 class "copyright"  que diga todos los 
 derechos reservados
 
---
+-----------------------
 css
 
 1. hacer el box-sizing: border-box
@@ -209,4 +209,29 @@ recordar limpiar los footer
 
 el "todos los derechos.." centrarlo y 
 dejarlo en blanco
+
+
+__________________________
+
+TIENDA DE CAMISETAS
+
+-------------------
+html
+
+1. crear el div contenedor
+y dentro poner el header
+fuera del contenedor poner un div hero 
+y poner la imagen más grande
+y fuera de el hacer un div productos y
+poner un h2 con el titulo
+"nuestros productos"
+
+2. Crear una ul dentro de productos 
+y cada li va a tener un img 
+un p y un a 
+en el img va la imagen de la camisa
+en el p va el nombre y un span con el 
+precio y en el a va el boton de comprar
+
+
 
