@@ -220,7 +220,7 @@ html
 
 1. crear el div contenedor
 y dentro poner el header
-fuera del contenedor poner un div hero 
+fuera del header poner un div hero 
 y poner la imagen más grande
 y fuera de el hacer un div productos y
 poner un h2 con el titulo
@@ -233,5 +233,49 @@ en el img va la imagen de la camisa
 en el p va el nombre y un span con el 
 precio y en el a va el boton de comprar
 
+--------------------
+css
 
+3. crear el box-sizing border box
 
+html{
+box-sizing:border-box;
+}
+*,*:before,*:after{
+box-sizing:inherit;
+}
+
+4. agregar padding 0 y margin 0 a todo
+
+5. font-family al body
+
+6. centrar el header y ponerle un poquito de
+padding arriba y abajo
+
+7. centrar el contenedor y ponerle un width 
+de 800px
+Recordar centrarlo con margin:0 auto;
+
+8. Hacer el "fondo fijo"
+buscar u degradado en colorzilla
+y pegarselo al body
+Poner el html height al 100% y el body 
+también al 100% y el body ponerle un 
+backgraund-repeat:no-repeat;
+backgranund-attachment:fixed;(dejarlo 
+fijo todo el tiempo)
+
+9. En la class hero poner la imagen al 
+100% de ese contenedor
+
+10. los h2 centrarlo, ponerlo en mayuscula
+ponerle margin de 30 arriba y abajo y que 
+sea blanco
+
+11. La lista de productos dejarla sin
+bolitas y con margin y padding 0  
+
+12. Darle estilo a los productos
+los li de la lista ponerlos flotantes a
+la izquierda, con width de 50% padding 
+de 20% y texto centrado
