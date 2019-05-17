@@ -279,3 +279,47 @@ bolitas y con margin y padding 0
 los li de la lista ponerlos flotantes a
 la izquierda, con width de 50% padding 
 de 20% y texto centrado
+
+13. si llega a haber algun error en la 
+medida por un pixel de más o etc...
+hacer un selector igual
+:nth-child(2n+1)/*impares*/
+{
+clear:both;
+}
+el clear, especifica si un elemento puede
+estar al lado de un elemento flotante
+y el valor both especifica que a a ambos 
+lados del elemento se aplica ese clear 
+es decir, que puede estar al lado izq y 
+der del un flotante
+
+14.ponerle borde solido a las imagenes de 
+los li con rgba de 128 1 195 .45
+y a esos border hacerles hover 
+para que queden sin transparencia
+
+15. ponerle color blanco a los p 
+dejarlos de 28px con grosor bold 
+y ponerles margin arriba de 10px
+
+16. al span de los p ponerles color #ffce00
+tamaño de letra 40px
+
+17. al boton ponerle fondo de color #ffce00
+padding 10px y 40px;
+display inline-block
+para que quede en en linea el contenedor 
+y se le puedan modificar algunas 
+cosas
+ponerle margin arriba de 10px
+quitarle la decoracion y dejarlos 
+con grosor bold en mayuscula 
+y del mismo color de los bordes de las 
+imagenes y de tamaño de letra más larga
+
+18. ponerle hover al boton para que cambie
+el rgba de la letra que esta dentro
+
+
+

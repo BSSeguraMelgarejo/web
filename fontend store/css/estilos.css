@@ -51,3 +51,56 @@ list-style: none;
 margin: 0;
 padding: 0;
 }
+
+ul.lista_productos li{
+	float: left;
+	width: 50%;
+	padding:20px;
+	text-align: center;
+}
+
+ul.lista_productos li:nht-child(2n+1){
+	clear:left;
+	/*pero podría ser left o right*/
+}
+
+ul.lista_productos li img{
+	border:solid;
+	border-color: rgba(128, 1, 195, 0.45);
+	border-width: 5px;
+}
+
+ul.lista_productos li img:hover{
+	border-color: rgba(128, 1, 195, 1);
+}
+
+
+ul.lista_productos li p{
+	color: #ffffff;
+	font-size:28px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+ul.lista_productos li p span{
+	color: #ffce00;
+	font-size: 40px;
+}
+
+.boton{
+	display: inline-block;
+	margin-top: 10px;
+	padding: 10px 30px;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: rgba(128, 1, 195, 0.45);
+	background-color: #ffce00;
+	border-radius: 10px;
+}
+
+.boton:hover{
+	color: rgba(128, 1, 195, 1);
+	padding: 8px 30px 8px 28px;
+}
+
